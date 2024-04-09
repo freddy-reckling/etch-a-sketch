@@ -15,6 +15,7 @@ function makeRows(rows, cols) {
 const reset = document.getElementById("reset");
 reset.addEventListener("click", function() {
   const cells = document.querySelectorAll(".grid-item");
+  
   cells.forEach(cell => {
     cell.style.backgroundColor = "white";
   });
@@ -28,5 +29,13 @@ let cols = dimensions;
 makeRows(rows, cols);
 });
 
-makeRows(rows, cols); 
+makeRows(); 
 
+
+function addOne(num) {
+    return num + 1;
+}
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9,];
+let mappedArray = numbers.map(addOne);
+console.log(mappedArray);

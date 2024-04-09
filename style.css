@@ -1,40 +1,36 @@
 :root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-  }
-  
-  #container {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-  }
-  
-  .grid-item {
-    border: 1px solid #ddd;
-    text-align: center;
-    padding: 1em;
-    
-  }
-  
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
 
-  #flex {
-   display: flex;
-    margin: 50px;
+#container {
+  display: grid;
+  grid-gap: 0.25em; /* decrease this to make the space between boxes tighter */
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
 
-  }
+.grid-item {
+  border: 1px solid #050000;
+  text-align: center;
+  padding: 0.2em; /* decrease this to make the boxes smaller */
+  height: 1px; 
+  width: 1px;
+}
 
-  #reset {
-    background-color: #04AA6D; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-  }
+#flex {
+  display: flex;
+  margin: 50px;
+}
 
-  #buttondiv {
-    padding: 5px;
-    margin-left: 40px;
-  }
+#reset {
+  background-color: #04AA6D; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+}
+
+table {
+  border: 1px solid black; 
+}
