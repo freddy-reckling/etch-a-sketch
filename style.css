@@ -5,7 +5,7 @@
 
 #container {
   display: grid;
-  grid-gap: 0.25em; /* decrease this to make the space between boxes tighter */
+  grid-gap: 0.25rem; /* decrease this to make the space between boxes tighter */
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
@@ -13,7 +13,7 @@
 .grid-item {
   border: 1px solid #050000;
   text-align: center;
-  padding: 0.2em; /* decrease this to make the boxes smaller */
+  padding: 0.2rem; /* decrease this to make the boxes smaller */
   height: 1px; 
   width: 1px;
 }
